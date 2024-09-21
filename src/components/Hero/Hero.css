@@ -1,0 +1,84 @@
+.hero{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    /* align-items: center; */
+    gap: 1rem;
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+.hero_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 40%;
+    /* background-color: blue; */
+    h2{
+        color: #424242d6;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    p{
+        color: #424242d6;
+        font-size: 5rem;
+        font-weight: 400;
+    }
+    .hand_icon{
+        display: flex;
+        gap:0.5rem;
+        align-items: center;
+    }
+    img{
+        width: 100px;
+    }
+    button{
+        padding: 1rem 2rem;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: #fbbaba;
+        cursor: pointer;
+        &:hover{
+            background-color: #ee7777;
+        }
+    }
+    
+}
+.hero_right{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    /* background-color: red; */
+
+}
+
+@media screen and (max-width: 900px){
+    .hero{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+    .hero_left{
+        max-width: 100%;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 4rem;
+        }
+    }
+    .hero_right{
+        max-width: 80%;
+    }
+}

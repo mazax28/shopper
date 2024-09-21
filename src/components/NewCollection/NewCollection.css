@@ -1,0 +1,35 @@
+.new_collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    min-height: 80vh;
+    gap: 2rem;
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    hr{
+        width: 100%;
+        background-color: black
+
+    }
+
+}
+
+.collections{
+    display: flex;
+    gap: 2rem;
+    overflow-x: scroll;
+    width: 100%;
+    align-items: start;
+    .content{
+        width: 350px;
+        flex-shrink: 0;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

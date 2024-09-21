@@ -1,0 +1,32 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    h1{
+        color: #171717;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    hr{
+        width: 100%;
+        border: 1px solid #171717;
+    }
+}
+.popular_item{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    .content{
+        width: 350px;
+        flex-shrink: 0;
+    }
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    /* background-color: aqua; */
+
+}

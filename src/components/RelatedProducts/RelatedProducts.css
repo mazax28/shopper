@@ -1,0 +1,24 @@
+.related{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 1rem;
+    .related_products{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+        width: 90%;
+        .content{
+            width: 350px;
+            flex-shrink: 0;
+        }
+        /* background-color: aquamarine; */
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
